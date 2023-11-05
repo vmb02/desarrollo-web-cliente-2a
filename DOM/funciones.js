@@ -57,4 +57,8 @@ function consulta() {
     var salida = estilos.getPropertyValue('font-size');
     console.log("FS: "+salida);
 
+    //PARA CAMBIAR VALORES
+
+    dedo.style.width = "150px";
+    dedo.style.setProperty('height', '150px');
 }

@@ -1,0 +1,11 @@
+#unico {
+    position: absolute;
+    top: 0; /* Indica a partir de qué posición dibujamos el elemento */
+    left: 800px;
+    width: 150px;
+    height: 150px;
+    background-color: #DDD;
+    text-align: center;
+    font-size: 1.3em;
+    color: black;
+}
