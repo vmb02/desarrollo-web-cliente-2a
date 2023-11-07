@@ -1,0 +1,14 @@
+div {
+    height: 100px;
+    width: 100px;
+}
+
+#c1 {
+    background-color: green;
+}
+#c2 {
+    background-color: purple;
+}
+#c3 {
+    background-color: yellow;
+}

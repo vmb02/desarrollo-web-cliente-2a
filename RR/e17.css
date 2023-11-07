@@ -1,0 +1,17 @@
+div {
+    width: 100px;
+    height: 100px;
+}
+
+#d1 {
+    background-color: green;
+}
+#d2 {
+    background-color: red;
+}
+#d3 {
+    background-color: aqua;
+}
+#d4 {
+    background-color: lightcoral;
+}
