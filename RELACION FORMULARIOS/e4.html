@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 4</title>
-    <script src="JS/e3.js" defer></script>
+    <script src="JS/e4.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
 </head>
 <body>
     <div class="container">
-        <h1>€ a $</h1>
+        <h1>Ejercicio 4</h1>
         <form>
-            
+            <div class="mb-3">
+                <select class="form-select" id="seleccion">
+                    <option value="dolarEuro">Dolar a Euro</option>
+                    <option value="euroDolar">Euro a Dolar</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <input type="number" class="form-control" id="cantidad" placeholder="Cantidad a convertir ">
+                <input type="text" class="form-control" id="resultado" placeholder="Resultado" readonly>
+            </div>
+            <div class="mb-3">
+                <input type="button" id="boton" value="Convertir">
+            </div>
         </form>
-    </div>
-
-    <div class="container">
-        <h1>$ a €</h1>
     </div>
 
 
