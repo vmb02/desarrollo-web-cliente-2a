@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div>
+            <p>Haz click on me</p>
+        </div>
+    </section>
+</body>
+</html>
+<script>
+
+    let hijo = document.querySelector("p");
+    let padre = document.querySelector("div");
+    let abuelo = document.querySelector("section");
+
+    /*
+    abuelo.onclick = function() {
+        alert("soy el abuelo");
+    }
+
+    padre.onclick = function() {
+        alert("soy el padre");
+    }
+
+    hijo.onclick = function() {
+        alert("soy el hijo");
+    } */
+
+    
+    abuelo.addEventListener("click", function() {
+        alert("soy el abuelo");
+    }, false);
+
+
+    padre.addEventListener("click", function() {
+        alert("soy el padre");
+    }, false);
+
+
+    hijo.addEventListener("click", function() {
+        alert("soy el hijo");
+    }, false);
+
+</script>
