@@ -1,0 +1,15 @@
+.error{
+    font-family: 'Times New Roman', Times, serif;
+    color:red;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #E8F0FE;
+    margin-top: 2%;
+    margin-bottom: -2%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: whitesmoke ;
+}
