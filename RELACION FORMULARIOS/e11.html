@@ -3,55 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 11</title>
-    <script src="JS/e11.js" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <title>Ejercicio 11 - Formularios</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/e11.css">
+    <script src="JS/e11.js" defer></script>
 </head>
 <body>
-
     <div class="container">
-        <h1>Ejercicio 11</h1>
-        <form>
-            <div class="mb-3">
-                <label class="form-label">DNI</label>
-                <input type="text" class="form-control" name="dni" placeholder="12345678A">
-                <p id = "dni" ></p> 
+        <h1>Ejercicio 11 - Formulario</h1>
+        <div class="row">
+            <div class="col-10">
+                <form>
+                    <div class="row mt-3 mb-3">
+                        <div class="col-2 align-items-center">
+                            <label class="form-label">DNI:</label>
+                        </div>
+                        <div class="col-8">
+                            <input class="form-control" type="text" name = "dni" placeholder="12345678A">
+                            <p id = "dni" ></p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-2 align-items-center">
+                            <label class="form-label">Nombre</label>
+                        </div> 
+                        <div class="col-8">
+                            <input class="form-control" type="text" name="nombre" placeholder="Introduzca su nombre">
+                            <p id = "nombre"></p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-2 align-items-center">
+                            <label class="form-label">Apellidos</label>
+                        </div> 
+                        <div class="col-8">
+                            <input class="form-control" type="text" name="apellidos" placeholder="Introduzca su apellidos">
+                            <p id = "apellidos"></p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-2 align-items-center">
+                            <label class="form-label">Fecha de nacimiento</label>
+                        </div> 
+                        <div class="col-8">
+                            <input class="form-control" type="date" name="fechaNacimiento"  placeholder="dd/mm/yyyy">
+                            <p id = "fecha"></p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-2 align-items-center">
+                            <label class="form-label">Web personal</label>
+                        </div> 
+                        <div class="col-8">
+                            <input class="form-control" type="url" name="WebPersonal" placeholder="https://www.algo.tresletras">
+                            <p id = "web" ></p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-2 align-items-center">
+                            <label class="form-label">Contraseña</label>
+                        </div> 
+                        <div class="col-8">
+                            <input class="form-control" type="password" name="pass" placeholder="********">
+                            <p id = "contrasena" ></p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <button type="button" id = "envio" class="btn btn-primary">Enviar</button>
+                        </div> 
+                        <div class="col-6">
+                            <button type="reset" class="btn btn-danger">Reset</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="mb-3">
-                <label class="form-label">Nombre</label>
-                <input type="text" class="form-control" name="nombre" placeholder="Nombre">
-                <p id = "nombre"></p>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Apellidos</label>
-                <input type="text" class="form-control" name="apellidos" placeholder="Apellidos">
-                <p id = "apellidos"></p>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Fecha de nacimiento</label>
-                <input type="date" class="form-control" name="fechaNacimiento" placeholder="dd/mm/yyyy">
-                <p id="fecha"></p>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Web Personal</label>
-                <input type="url" class="form-control" name="webPersonal" placeholder="https://www.algo.tresletras">
-                <p id="web"></p>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Contraseña</label>
-                <input type="password" class="form-control" name="pass" placeholder="********">
-                <p id="contrasena"></p>
-            </div>
-            <div class="mb-3">
-                <input type="button" id="envio" class="btn btn-primary" value="Enviar">
-            </div>
-            <div class="mb-3">
-                <input type="button" id="reset" class="btn btn-primary" value="Reset">
-            </div>
-        </form>
-    </div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        </div>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+    ></script>
 </body>
 </html>
