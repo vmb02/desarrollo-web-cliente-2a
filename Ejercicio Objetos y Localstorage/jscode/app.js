@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let titulo = "";
     let portada = "";
     let seccion = document.getElementsByTagName("section")[0];
+   
     let nlibros = library.length;
-
     let numeroLibros = document.createElement("P");
     let texto = document.createTextNode("Hay " + nlibros + " libros en la biblioteca");
     numeroLibros.appendChild(texto);
