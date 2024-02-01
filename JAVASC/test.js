@@ -12,7 +12,7 @@ window.onload = () =>{
     xhr.addEventListener("load", function(respuesta) {
         console.log("TODO OK");
         let resultado = JSON.parse(respuesta.target.response);
-        //console.log(respuesta);
+        console.log(respuesta);
         /*
         for(const libro of resultado.library) {
             salida.innerHTML += `<div>${libro.book.title} >><< ${libro.book.pages}</div>`;
