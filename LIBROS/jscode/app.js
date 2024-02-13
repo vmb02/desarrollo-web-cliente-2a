@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     numeroLibros.appendChild(texto);
     document.getElementsByTagName("h1")[0].appendChild(numeroLibros);
 
+    console.log(library.length);
     for(let i = 0; i < library.length; i++) {
         titulo = library[i].title;
         portada = library[i].cover;
@@ -34,4 +35,10 @@ document.addEventListener('DOMContentLoaded', function() {
             location.replace("mostrar.html");
         });
     }
+
+    let boton = document.querySelectorAll("footer a")[0];
+    boton.addEventListener("click", function() {
+        window.location.href="nuevoLibro.html";
+    });
+
 });

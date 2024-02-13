@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Productos</title>
+  <style>
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .product-item {
+      cursor: pointer;
+    }
+
+    .product-item:hover {
+      background-color: lightgray;
+    }
+
+    .product-image {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <section id="productList">
+    <h2>Lista de Productos</h2>
+    <div class="product-list"></div>
+  </section>
+  <section id="productImage">
+    <h2>Imagen del Producto</h2>
+    <img class="product-image" src="" alt="Imagen del Producto">
+  </section>
+  <button id="botonfetch">Obtener Productos</button>
+</body>
+<script src="./JS/ejercicio3.js"></script>
+</html>
