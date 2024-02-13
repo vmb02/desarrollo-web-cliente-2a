@@ -23,13 +23,11 @@ document.addEventListener("DOMContentLoaded", function() {
             imagen.setAttribute("src", data.results[0].picture.medium)
             imagen.setAttribute("alt", nombre);
 
-            let nodoInfo = document.createElement("p");
             let texto = document.createTextNode(nombre + " " + apellido + ": " + edad);
-            nodoInfo.appendChild(texto);
-
+            
             let article = document.createElement("article");
             article.setAttribute("class", "usuario");
-            article.appendChild(nodoInfo);
+            article.appendChild(texto);
             article.appendChild(imagen);
 
             let div = document.querySelector("section div");
